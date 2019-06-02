@@ -1,0 +1,111 @@
+        
+   <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="main.js"></script>
+
+    </head>
+    <body> 
+
+        <div class="container">
+
+            <div class="row alert-primary">
+                <div class="col-sm-12">
+                    <h1 ALIGN="center">
+                            SIGN UP
+                    </h1>
+
+                </div>
+
+            </div> <!--end of heading div-->
+            <br>
+            <br>
+            <div class="row ">
+                    <div class="col-sm-2" ></div>
+                    <div class="col-sm-8 alert-secondary" >
+                        <h3>create your book hub account</h3>
+                        <br>
+
+                        <table> 
+                                <p id="error" style="color: red;"></p>
+                            <form action="formvalidate.html" method="POST" onsubmit="return Validation();">
+                             
+                              <tr>
+                                 
+                                    <td>  <label for="1">please enter your phone number</label></td>           </tr>    
+                                    <tr><td><input type="text" name="phone" id="1" required>  </td> <td><input type="checkbox"></td>
+                                      <td> if you are agree please mark the give check box</td> </tr>
+                                  <tr><td>  <label for="2">please enter Name</label></td></tr> 
+                                    <tr><td><input type="text" name="name" id="2" required>  </td> <TD>  </TD> <td><input type="submit" name="submit" id="" class="p-3 mb-2 bg-warning text-dark"></td>     </tr> 
+                                    <tr><td><label >Enter Your email*</label></td></tr>
+                                    <tr><td><label for="6"><input type="email" name="email" id="6" required ></td></label></tr>
+                              
+                                    <tr><td>  <label for="3">please enter your phone number</label></td></tr> 
+                                    <tr><td><input type="password" name="pass" id="3" required>  </td></tr></tr>
+                                    <tr><td><label for="4">Birthday<label></td></tr>
+                                    <tr><td><input type="date" name="date"required ></td></tr>
+                                    <tr><td><label>GendeR</label></td></tr>
+                                     <tr><td><select name="gender" value="choose gender" required><option value="1">Male</option><option value="2">Female</option>
+                                    </select></td></tr>
+                                    
+                                                               
+                                
+                                </form>
+                                <script type="text/javascript">
+	
+	
+                                function Validation()
+{
+
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var Password=document.getElementById("Password").value;
+
+if (name=="" || Password=="" || email=="")
+{
+document.getElementById("error").innerHTML="All Fields Required";
+return false;
+}
+else if(name.length<4)
+{
+	document.getElementById("error").innerHTML="Name must Atleast 4 charachters";
+	return false;
+}
+else if(Password.length<4) 
+{
+document.getElementById("error").innerHTML="Password must Atleast 4 charachters";
+return false;
+}
+else
+{
+	return true;
+}
+
+}
+
+</script>
+
+
+
+                        </table>
+                     
+
+                    </div>
+
+
+
+            </div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    </body>
+    </html>>

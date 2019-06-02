@@ -1,0 +1,27 @@
+.head{
+	width:100%;
+	height:80px;
+	display:block;
+}
+*{
+	margin:0;
+	padding:0;
+}
+.first{
+	width:100%;
+	float:left;
+	margin-top:30px;
+	width:40%;
+}
+a{
+	font-size:15px;
+	border:1px solid blue;
+	padding:5px 5px;
+	border-radius:7px;
+	vertical-align:middle;
+	color:blue;
+}
+.name{
+	float:left;
+	
+}

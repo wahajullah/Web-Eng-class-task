@@ -1,0 +1,25 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+.name {
+	width:38%;
+	text-align:left;
+	font-size:25px;
+	float:left;
+}
+.menu {
+	width:59%;
+	font-size:25px;
+	float:left;
+	text-align:right;
+	text-decoration:none;
+}
+a {
+	display:inline-block;
+	text-decoration:none;
+	color:black;
+	padding:0px 4px;
+}
+ul {
+}

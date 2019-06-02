@@ -1,0 +1,25 @@
+.form-control
+{
+	widows: 100%;
+	margin-top: 12px;
+	
+}
+.form-control:hover{
+	 background-color: aqua;
+	 width: 150%;
+	            
+}
+.col-sm-2
+{
+
+	margin-left: 330PX;
+	display: inline;
+	margin-top: 6px;
+}
+
+.btn btn-warning:hover
+	{
+	   
+	   width: 200px;
+
+	}

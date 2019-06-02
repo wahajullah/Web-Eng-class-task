@@ -1,0 +1,14 @@
+.rafia a {
+	display:inline-block;
+	text-decoration:none;
+	color: black;
+	border:2px solid black;
+	text-transform:uppercase;
+	padding:10px 20px;
+	transition:0.4 linear;
+	border-radius:30px;
+}
+.rafia a:hover{
+	color: white;
+	
+}

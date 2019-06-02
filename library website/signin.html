@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>
+		FORM
+	</title>
+</head>
+<body>
+	<div class="row alert-primary">
+		<div class="col-sm-1"></div>
+<h2>Sign In For Book Hub</h2></div>
+<div class="col-sm-1"></div>
+<div class="col-sm alert-warning">
+<p id="error" style="color: red;"></p>
+
+<table>
+<form action="formvalidate.html" method="POST" onsubmit="return Validation();">
+<tr>
+	<td>Name:</td><td><input type="text" name="name" id="name"></td>
+</tr>	
+	
+<tr>
+	<td>Email:</td><td><input type="email" name="email" id="email"></td>
+</tr>	
+<tr>
+	<td>Password:</td><td><input type="Password" name="Password" id="Password"></td>
+</tr>	
+<tr>
+	<td>Submit</td><td><input type="submit" name="submit" ></td>
+</tr>	
+
+
+
+
+
+</form>
+</table>
+
+<script type="text/javascript">
+	
+function Validation()
+{
+
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var Password=document.getElementById("Password").value;
+
+if (name=="" || Password=="" || email=="")
+{
+document.getElementById("error").innerHTML="All Fields Required";
+return false;
+}
+else if(name.length<4)
+{
+	document.getElementById("error").innerHTML="Name must Atleast 4 charachters";
+	return false;
+}
+else if(Password.length<4) 
+{
+document.getElementById("error").innerHTML="Password must Atleast 4 charachters";
+return false;
+}
+else
+{
+	return true;
+}
+
+}
+
+</script>
+</div>
+</div>
+
+</body>
+</html>

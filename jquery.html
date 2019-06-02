@@ -1,0 +1,84 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+</head>
+<body>
+<div><p><img src="images/a.jpg"></p></div>
+<button  value="submit" id="hide">hide</button>
+<button  value="submit" id="show">Show</button>
+
+<button  value="submit" id="hide"></button>
+<button  value="submit" id="show">Show</button>
+
+<button  value="submit" id="hide">hide</button>
+<button  value="submit" id="show">Show</button>
+
+
+
+
+
+
+
+<script>
+$("#hide").click(function(){
+    $("p").hide();
+});
+
+
+
+$("#show").click(function(){
+    $("p").show();
+});
+
+
+
+
+
+
+
+
+
+$("button").click(function(){
+    $("#show").fadeIn();
+    $("#div2").fadeOut ("slow");
+    $("#div3").fadeToggle(3000);
+});
+
+$("#flip").click(function(){
+    $("#panel").slideDown();
+    $("#panel").slideUp ();
+    $("#panel").slideToggle ();
+});
+
+
+$("button").click(function(){
+    $("div").animate({left: '250px'});
+}); 
+
+$("#stop").click(function(){
+    $("#panel").stop();
+});
+
+$("button").click(function(){
+    $("p").hide("slow", function(){
+        alert("The paragraph is now hidden");
+    });
+});
+$("button").click(function(){
+    $("p").$("#p1").css("color", "red")
+  .slideUp(2000)
+  .slideDown(2000);  
+});
+
+
+
+ 
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="e"></p>
+    <form action="create.html" method="post" onsubmit="return validation();">
+        <p>Email</p><input type="email" id="Email">
+        <p>Password</p><input type="password" id="Password"><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function validation()
+        {
+            var n = document.getElementById("Email").value;
+            var p = document.getElementById("Password").value;
+            if(n==""||p==""){
+                document.getElementById("e").innerHTML="FILL ALL SPACES";
+                return false;
+            }
+            else{
+                return true;
+            }
+
+        }
+    </script>
+</body>
+</html>

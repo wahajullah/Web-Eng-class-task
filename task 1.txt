@@ -1,0 +1,51 @@
+<html>
+ <head>
+   <title>Task 1</title> 
+ </head>
+  <body bgcolor=" lightgreen">
+  
+  <pre>   
+  </pre>
+  <table border="1" align ="center">
+    <tr>
+	 <td align="center">1080</td>
+	 <td colspan="2" width="100%">Demo Title</td>
+    </tr>
+	<tr>
+	 <td colspan="2" align="center"><p>para 1</p><p>para 2</p></td>
+	 <td>
+	 <ul>
+	 <li>course 1</li>
+	  <li>course 2</li>
+	   <li>course 3</li>
+	    <li>course 4</li>
+		 <li>course 5</li>
+		  <li>course 6</li>
+		   <li>course 7</li>
+		    <li>course 8</li>
+			 <li>course 9</li>
+	 </ul>
+	 </td>
+    </tr>
+	<tr align="center">
+	 <td>
+	   <ol type="a">
+		<li>course 1</li>
+	    <li>course 2</li>
+	    <li>course 3</li>
+	    <li>course 4</li>
+	   </ol>
+	 </td>
+	 <td colspan="2" align="center">
+	 <ol>
+	 <li>course 5</li>
+		  <li>course 6</li>
+		   <li>course 7</li>
+		    <li>course 8</li>
+			 <li>course 9</li>
+	 </ol>
+	 </td>
+    </tr>
+  </table>
+  </body>
+ </html>

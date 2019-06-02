@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Form In Html</title>
+	</head>
+	<body>
+		<form action="process.php" method="GET"></form>
+		<table border="1">
+			<tr>
+				<td>First Name</td>
+				<td>
+					<input type="text" name="first_name" placeholder="Enter your first name">
+				</td>
+			</tr>
+			<td>Middle Name</td>
+			<td>
+				<input type="text" name="middle_name">
+			</td>
+			<tr>
+				<td>Last Name</td>
+				<td>
+					<input type="text" name="last_name">
+				</td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>
+					<input type="password" name="user_password">
+				</td>
+			</tr>
+			<tr>
+				<td>Conform Password</td>
+				<td>
+					<input type="password" name="conform_password">
+				</td>
+			</tr>
+			</tr>
+			<tr>
+				<td>Email Address</td>
+				<td>
+					<input type="text" name="email_address">
+				</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="gender">Male
+					<input type="radio" name="gender">Female</td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td>
+					<select name="countries">
+						<option>Select Country</option>
+						<option value="1" selected>Pakistan</option>
+						<option value="2">Turkey</option>
+						<option value="3">China</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="checkbox" name="interest[]">Games
+					<input type="checkbox" name="interest[]">Movies
+					<input type="checkbox" name="interest[]">Books</tr>
+			<tr>
+				<td>Comments</td>
+				<td>
+					<textarea rows="10"></textarea>
+				</td>
+				<tr>
+				<td><input type="submit"></td>
+				<td><input type="reset"></td>
+				</tr>
+			</tr>
+		</table>
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+ <head>
+   <title>Class Project</title> 
+ </head>
+ <body>
+ <h1><center>STUDENT DETAIL</h1></center>
+  <table border="3" align="center" width="100%" cellpadding="">
+   <tr>
+    <td colspan="4" align="center">Student Details</td>
+   </tr>
+   <tr>
+     <td>ID</td>
+	 <td>NAME</td>
+	 <td>FATHERNAME</td>
+	 <td>EMAIL DOMAIN</td>
+   </tr>
+   <tr>
+     <td>1</td>
+	 <td>Wahaj</td>
+	 <td>Hafeez</td>
+	 <td>Live</td>
+   </tr>
+   <tr>
+     <td>2</td>
+	 <td>Muneeb</td>
+	 <td>Mansoor</td>
+	 <td>Gmail</td>
+   </tr>
+   <tr>
+     <td>3</td>
+	 <td>Sufiyan</td>
+	 <td>Shah</td>
+	 <td>Gmail</td>
+   </tr>
+   <tr>
+    <td colspan="4"  align="center">BLA BLA</td>
+   </tr>
+  </table>
+ </body>
+</html>

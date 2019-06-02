@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="in" style="height:100px;width :auto; background-color:brown;"><p>Instagram</p></div>
+    <div id="wh" style="height:100px;width :auto; background-color:green;"><p>Whatsapp</p></div>
+    <div id="fb" style="height:100px;width :auto; background-color:blue;"><p>Facebook</p></div>
+<button id="btn1" onclick="swap('in','wh')">Change Instagram size </button>
+<button id="btn2" onclick="swap('wh','fb')">Change Whatsapp size</button>
+<button id="btn3">Change Favebook size</button>
+<script>
+document.getElementById("btn1").onclick=
+function(){
+    document.getElementById("in").innerHTML="<p><h1>INSTAGRAM</h1></p>";
+}
+document.getElementById("btn2").onclick=
+function(){
+    document.getElementById("wh").style.width="200px";
+    document.getElementById("wh").style.height="200px";
+    document.getElementById("wh").style.color="red";
+}
+document.getElementById("btn3").onclick=
+function(){
+    document.getElementById("fb").innerHTML="<p><h1>FACEBOOK</h1></p>";
+}
+// function a(){
+//     window.alert("Hi wahaj");
+// }
+// function b(fname){
+//     window.alert('Hello '+fname+' !');
+// }
+// a();
+// b('wahaj');
+// function c(a,b){
+//     return a+b;
+// }
+// var x=c(7,3);
+// window.alert(x);
+function swap(a,b){
+    var y=document.getElementById(a).innerHTML;
+    var z=document.getElementById(b).innerHTML;
+document.getElementById(b).innerHTML=y;
+document.getElementById(a).innerHTML=z;
+
+}
+</script>
+</body>
+</html>

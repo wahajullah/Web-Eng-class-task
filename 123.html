@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+            <form >
+              <br><p  class="font-weight-bold" style="font-size:20px;">SIMPLE CALCULATOR</p><br>
+              <input type="text" class="form-control" placeholder="First Number"id="input1" ><br>
+              <input type="text" class="form-control" placeholder="Second Number" id="input2"><br>
+              <input type="text" class="form-control" placeholder="Result" id="res"><br>
+              <button type="button" class="btn btn-primary" onclick="myfuction()" >ADD</button>
+              <button type="button" class="btn btn-secondary" onclick="myfuction2()">SUBT</button>
+              <button type="button" class="btn btn-success" onclick="myfuction3()">MULTIPLY</button>
+              <button type="button" class="btn btn-danger" onclick="myfuction4()">DIVISION</button>
+            </form>
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+       function myfuction()
+        {
+            var fname=parseInt(document.getElementById("input1").value);
+            var lname=parseInt(document.getElementById("input2").value);
+            document.getElementById("res").value=fname+lname;
+        }
+       function myfuction2()
+        {
+            var fname=parseInt(document.getElementById("input1").value);
+            var lname=parseInt(document.getElementById("input2").value);
+            document.getElementById("res").value=fname-lname;
+        }
+       function myfuction3()
+        {
+            var fname=parseInt(document.getElementById("input1").value);
+            var lname=parseInt(document.getElementById("input2").value);
+            document.getElementById("res").value=fname*lname;
+        }
+       function myfuction4()
+        {
+            var fname=parseInt(document.getElementById("input1").value);
+            var lname=parseInt(document.getElementById("input2").value);
+            document.getElementById("res").value=fname/lname;
+        }
+      
+      </script>
+</body>
+</html>

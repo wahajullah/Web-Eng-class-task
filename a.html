@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<h4>ENTER NAME</h4><input type="text" id="a" > <br>
+
+
+<h4>Enter 2nd number</h4><input type="text" id="b" > <br>
+
+<p id="u"></p>
+
+<button type="Button" onclick="myFunction()">Done</button>
+<script>
+ function myFunction(){
+    var x= parseInt(  document.getElementById("a").value);
+    var y=  parseInt(document.getElementById("b").value);
+
+    var z = x+y;
+
+    document.getElementById("u").innerHTML=z;
+    console.log("c");
+
+ }
+ 
+ </script>
+<body>
+</body>
+</html>
